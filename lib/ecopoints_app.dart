@@ -243,16 +243,6 @@ class _EcoPointsHomeState extends State<EcoPointsHome> {
       case 'history':
         return const TelaHistorico();
       case 'settings':
-        return TelaConfiguracoes(
-          notifications: notifications,
-          darkMode: darkMode,
-          soundEnabled: soundEnabled,
-          locationEnabled: locationEnabled,
-          onNotifications: setNotifications,
-          onDarkMode: setDarkMode,
-          onSoundEnabled: setSoundEnabled,
-          onLocationEnabled: setLocationEnabled,
-        );
       case 'stats':
         return const TelaEstatisticas();
       default:
